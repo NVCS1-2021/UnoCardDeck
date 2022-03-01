@@ -1,5 +1,5 @@
 public class Deck {
-  Card[] cards = new Card[40];
+  public Card[] cards = new Card[40];
   
   public Deck() {
     spawnCards();
@@ -7,6 +7,15 @@ public class Deck {
   
   public void show() {
     
+  }
+  
+  public void deal(Hand hand) {
+    
+  }
+  
+  private int biggestAttack() {
+    
+    return cards[0].attack; 
   }
   
   private void spawnCards() {

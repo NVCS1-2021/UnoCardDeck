@@ -5,6 +5,10 @@ public class Deck {
     spawnCards();
   }
   
+  public void show() {
+    
+  }
+  
   private void spawnCards() {
     color[] colors = {
       #FF0000,

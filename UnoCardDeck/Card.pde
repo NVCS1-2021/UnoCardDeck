@@ -9,7 +9,7 @@ public class Card {
     this.attack = (int) random(10);
   }
   
-  public void draw(int x, int y) {
+  public void show(int x, int y) {
     fill(c);
     rect(x, y, WIDTH, HEIGHT);
     fill(255);

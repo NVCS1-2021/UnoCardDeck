@@ -6,7 +6,7 @@ public class Deck {
   }
   
   public void show() {
-    
+    System.out.println("hello");
   }
   
   public void deal(Hand hand) {

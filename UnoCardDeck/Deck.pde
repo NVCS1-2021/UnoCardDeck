@@ -1,6 +1,6 @@
 public class Deck {
   public Card[] cards = new Card[40];
-  
+  public Hand hand;
   public Deck() {
     spawnCards();
   }
@@ -10,9 +10,26 @@ public class Deck {
   }
   
   public void deal(Hand hand) {
-    
+     Card[] cardlist = new Card[7];
+     int i = 0;
+     while (i < 7) {
+      Card cardDrew = cards[(int)(Math.random()*41)];
+      if (inList(cardDrew, cardlist) == false)
+      {
+       cardlist[i] = cardDrew;
+       i++;
+      }
+     }
+     hand = new Hand(cardlist);
   }
-  
+  private boolean inList(Card card, Card[] cardsArray){
+    for (int i = 0; i < cardsArray.length; i++) {
+      if (card == cardsArray[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
   private int biggestAttack() {
     
     return cards[0].attack; 

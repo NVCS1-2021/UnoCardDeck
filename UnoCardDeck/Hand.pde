@@ -13,9 +13,9 @@ public class Hand {
     
   }
   
-  public Card biggestAttack() {
+  public Card biggestAttack(Card[] eligibles) {
     
-    return cards[0];
+    return eligibles[0];
   }
   
   public Card bestCard(color c, int num) {
@@ -23,5 +23,9 @@ public class Hand {
     return cards[0];
   }
   
+  public Card[] eligibleCards() {
+    Card[] eligibles = cards;
+    return eligibles;
+  }
   
 }

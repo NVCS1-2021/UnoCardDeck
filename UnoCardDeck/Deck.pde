@@ -14,6 +14,12 @@ public class Deck {
   }
   
   private int biggestAttack() {
+    cards[0].attack = 0;
+    for (int i = 0; i < cards.length; i++) {
+      if (cards[i].attack > cards[0].attack) {
+        cards[0].attack = cards[i].attack;
+      }  
+    }
     
     return cards[0].attack; 
   }

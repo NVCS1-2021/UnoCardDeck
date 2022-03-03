@@ -23,7 +23,7 @@ public class Hand {
     return cards[0];
   }
   
-  public Card[] eligibleCards() {
+  public Card[] eligibleCards(color c, int num) {
     Card[] eligibles = cards;
     return eligibles;
   }

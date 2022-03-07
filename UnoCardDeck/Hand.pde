@@ -6,7 +6,11 @@ public class Hand {
   }
   
   public void show() {
-    
+    for (int i = 0; i < cards.length; i++) {
+      if (showDeckBtn.isOn) {
+     cards[i].show(25 * i, 50); 
+    }
+  }
   }
   
   public void place() {
@@ -22,6 +26,8 @@ public class Hand {
     
     return cards[0];
   }
-  
-  
+  public Card[] eligibleCards() {
+   Card[] eligibles = cards;
+   return eligibles;
+  }
 }

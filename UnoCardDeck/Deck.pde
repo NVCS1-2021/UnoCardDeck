@@ -6,7 +6,9 @@ public class Deck {
   }
   
   public void show() {
-    
+    for (int i = 0; i < cards.length; i++){
+     cards[i].show((int)(Math.random()*700),(int)(Math.random()*500)); 
+    }
   }
   
   public void deal(Hand hand) {

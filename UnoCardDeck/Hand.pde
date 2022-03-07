@@ -20,8 +20,8 @@ public class Hand {
   
   public Card bestCard(color c, int num) {
     
-    return cards[0];
-  }
+   // return cards[0];
+ // }
   
   
 }

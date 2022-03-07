@@ -3,6 +3,7 @@ public class Deck {
   
   public Deck() {
     spawnCards();
+    
   }
   
   public void show() {
@@ -14,8 +15,18 @@ public class Deck {
   }
   
   private int biggestAttack() {
+    cards[0].attack = 0;
+    for (int i = 0; i < cards.length; i++) {
+      System.out.println("Card: " + cards[i].attack);
+      if (cards[i].attack > cards[0].attack) {
+        cards[0].attack = cards[i].attack;
+      }  
+    }
     
+    System.out.println("Max: " + cards[0].attack);
     return cards[0].attack; 
+    
+    // hey!
   }
   
   private void spawnCards() {

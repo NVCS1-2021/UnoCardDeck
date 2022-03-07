@@ -6,7 +6,9 @@ public class Deck {
   }
   
   public void show() {
-    
+    rect(170,150,70,50);
+    color(50);
+   text('O',cards[i].x,cards[i].y);
   }
   
   public void deal(Hand hand) {
@@ -14,7 +16,12 @@ public class Deck {
   }
   
   private int biggestAttack() {
-    
+       Card bigAtt = cards[0];
+    for(int i = 0; i <cards.length; i++) {
+     if(cards[i].attack > bigAtt.attack) {
+      bigAtt = cards[i]; 
+     }
+    }
     return cards[0].attack; 
   }
   

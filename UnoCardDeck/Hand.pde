@@ -6,7 +6,7 @@ public class Hand {
   }
   
   public void show() {
-    
+    System.out.println("hi");
   }
   
   public void place() {

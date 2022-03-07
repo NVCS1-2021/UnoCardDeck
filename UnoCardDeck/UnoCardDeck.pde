@@ -1,4 +1,5 @@
 Deck deck;
+Card[] showCards = new Card[20];
 Button showDeckBtn;
 Hand player1Hand;
 
@@ -11,6 +12,9 @@ public void setup() {
 
 public void draw() { //<>//
   background(220);
+  for(int i = 0; i < showCards.length; i++) {
+    showCards[i].show();
+  }
   showDeckBtn.show(); //<>//
   if (showDeckBtn.isOn) {
     deck.show(); 

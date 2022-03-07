@@ -1,4 +1,5 @@
 public class Hand {
+  public final int  rad = 20;
   public Card[] cards = new Card[7];
   
   public Hand(Card[] cards) {
@@ -6,6 +7,7 @@ public class Hand {
   }
   
   public void show() {
+    circle(rad);
     
   }
   

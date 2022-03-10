@@ -13,7 +13,7 @@ public class Button {
     
   }
   
-  public void show() {
+  public void show() { //<>//
     fill(isOn ? 255 : 64);
     rect(pos.x, pos.y, size.x, size.y);
     fill(!isOn ? 255 : 64);
@@ -28,5 +28,5 @@ public class Button {
       && mouseY < pos.y + size.y;
     isOn = isClicked ? !isOn : isOn;
     return isClicked;
+    }
   }
-}

@@ -3,11 +3,12 @@ public class Deck {
   
   public Deck() {
     spawnCards();
-    
   }
   
   public void show() {
-    
+    for (int i = 0; i < 40; i++) {
+      cards[i].show(width/2, height/2 - 100);
+    }
   }
   
   public void deal(Hand hand) {
@@ -25,8 +26,6 @@ public class Deck {
     
     System.out.println("Max: " + cards[0].attack);
     return cards[0].attack; 
-    
-    // hey!
   }
   
   private void spawnCards() {
